@@ -166,13 +166,16 @@ class App extends Component {
       let corgiBreed;
       if (corgis[index].breeds.breed.$t) {
         corgiBreed = corgis[index].breeds.breed.$t;
-      } else if (corgis[index].breeds.breed[0].$t !== "Welsh Corgi") {
+      } else if (corgis[index].breeds.breed[0].$t !== "Pembroke Welsh Corgi") {
         corgiBreed = corgis[index].breeds.breed[0].$t;
-      } else if (corgis[index].breeds.breed[1].$t !== "Welsh Corgi") {
+      } else if (corgis[index].breeds.breed[1].$t !== "Pembroke Welsh Corgi") {
         corgiBreed = corgis[index].breeds.breed[1].$t;
       }
       // then format breed
-      if (corgiBreed === "Welsh Corgi" || corgiBreed === "Mixed Breed") {
+      if (
+        corgiBreed === "Pembroke Welsh Corgi" ||
+        corgiBreed === "Mixed Breed"
+      ) {
         corgiBreed = "";
       } else {
         corgiBreed = `${corgiBreed} Mix`;
@@ -255,7 +258,7 @@ class App extends Component {
       },
       () => {
         fetchJsonp(
-          `http://api.petfinder.com/pet.find?format=json&key=APIKEYHERE&breed=Welsh%20Corgi&animal=dog&location=${
+          `http://api.petfinder.com/pet.find?format=json&key=APIKEYHERE&breed=Pembroke%20Welsh%20Corgi&animal=dog&location=${
             this.state.location
           }&count=500&callback=callback2`,
           {
@@ -273,7 +276,7 @@ class App extends Component {
 
   fetchMoreCorgis = () => {
     fetchJsonp(
-      `http://api.petfinder.com/pet.find?format=json&key=APIKEYHERE&breed=Welsh%20Corgi&animal=dog&location=${
+      `http://api.petfinder.com/pet.find?format=json&key=APIKEYHERE&breed=Pembroke%20Welsh%20Corgi&animal=dog&location=${
         this.state.location
       }&count=5&offset=${this.state.lastOffset}&callback=callback`,
       {
