@@ -5,7 +5,7 @@ A project I made to practice React and fetching from an API.
 To install:
 
 - `npm install` --> create node_modules
-- `npm start` --> to play locally
+- `npm start` --> to run locally
 - `npm run build` --> to build
 
 Get your own Petfinder API key here: https://www.petfinder.com/developers/api-key
