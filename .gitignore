@@ -20,3 +20,6 @@ yarn-error.log*
 
 #api key
 api-key.txt
+
+#scss
+/scss
