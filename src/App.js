@@ -258,7 +258,7 @@ class App extends Component {
       },
       () => {
         fetchJsonp(
-          `http://api.petfinder.com/pet.find?format=json&key=APIKEYHERE&breed=Pembroke%20Welsh%20Corgi&animal=dog&location=${
+          `https://api.petfinder.com/pet.find?format=json&key=APIKEYHERE&breed=Pembroke%20Welsh%20Corgi&animal=dog&location=${
             this.state.location
           }&count=500&callback=callback2`,
           {
@@ -276,7 +276,7 @@ class App extends Component {
 
   fetchMoreCorgis = () => {
     fetchJsonp(
-      `http://api.petfinder.com/pet.find?format=json&key=APIKEYHERE&breed=Pembroke%20Welsh%20Corgi&animal=dog&location=${
+      `https://api.petfinder.com/pet.find?format=json&key=APIKEYHERE&breed=Pembroke%20Welsh%20Corgi&animal=dog&location=${
         this.state.location
       }&count=5&offset=${this.state.lastOffset}&callback=callback`,
       {
