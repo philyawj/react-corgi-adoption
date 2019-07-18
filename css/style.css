@@ -1,0 +1,61 @@
+html {
+  touch-action: manipulation; }
+
+body {
+  background-color: #e9ecef;
+  font-family: "Lato", sans-serif !important; }
+
+.crop {
+  width: 250px;
+  height: 250px;
+  object-fit: cover; }
+
+#fade-out {
+  opacity: 0; }
+
+#fade-out-results {
+  opacity: 0; }
+
+#cover {
+  background: url(../img/corgi1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 264px;
+  max-width: 992px;
+  position: relative; }
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 264px;
+  background: rgba(0, 0, 0, 0.4); }
+
+h1 {
+  font-size: 40px; }
+
+@media (min-width: 768px) {
+  #cover {
+    min-height: 500px; }
+
+  .dark-overlay {
+    min-height: 500px; }
+
+  h1 {
+    font-size: 80px; } }
+@media (min-width: 992px) {
+  #cover {
+    min-height: 650px;
+    border-radius: 0px 0px 5px 5px; }
+
+  .dark-overlay {
+    min-height: 650px;
+    max-width: 992px;
+    border-radius: 0px 0px 5px 5px; }
+
+  h1 {
+    font-size: 96px; } }
+.main-container {
+  max-width: 992px;
+  margin: auto; }
